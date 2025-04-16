@@ -1,0 +1,18 @@
+{
+  "name": "posts-crud-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env app.js",
+    "dev": "node --watch --trace-warnings --env-file=.env app.js"
+  },
+  "keywords": [],
+  "author": "Umair",
+  "license": "ISC",
+  "description": "This App is created to learn basic concepts of nodejs or backend includes Authentication, database connection and basic operations of database like get, add, update and delete data from database.",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
+  }
+}
