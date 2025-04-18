@@ -1,7 +1,7 @@
 import express from "express";
-import { mongoDbConnection } from "./connection/db.js\
-";
+import { mongoDbConnection } from "./connection/db.js";
 import { addDummyPost } from "./controllers/testContrller.js";
+import postsRouter from "./router/postsRouter.js";
 
 /**
  * ** Create an app object from Express to handle routing.
@@ -27,6 +27,8 @@ app.get("/", (req, res) => {
   addDummyPost();
   res.send("dummy post added to db.");
 });
+
+app.use("/api/posts", postsRouter);
 
 /**
  *  **** Routes Methods:
